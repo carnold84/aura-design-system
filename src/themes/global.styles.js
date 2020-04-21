@@ -2,7 +2,9 @@ import { injectGlobal } from 'vue-styled-components';
 
 export default injectGlobal`
   body {
-    font-size: 14px;
+    box-sizing: border-box;
+    font-size: 13px;
     margin: 0;
+    padding: 20px;
   }
 `;

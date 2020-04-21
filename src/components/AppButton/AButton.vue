@@ -5,17 +5,23 @@
     :type="type"
     @click="onClick"
   >
+    <div v-if="$scopedSlots['icon-left']">
+      <slot name="icon-left" />
+    </div>
     <slot></slot>
+    <div v-if="$scopedSlots['icon-right']">
+      <slot name="icon-right" />
+    </div>
   </wrapper>
 </template>
 
 <script>
-import { Wrapper } from './AppButton.styles';
+import { Wrapper } from './AButton.styles';
 
 export default {
-  name: 'app-button',
+  name: 'a-button',
   components: {
-    wrapper: Wrapper,
+    Wrapper,
   },
   methods: {
     onClick() {

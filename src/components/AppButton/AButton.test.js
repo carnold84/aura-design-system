@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils';
-import Component from './AppButton.vue';
+import Component from './AButton.vue';
 
-describe('AppButton', () => {
+describe('AButton', () => {
   let vm;
   let wrapper;
   beforeEach(() => {
