@@ -1,7 +1,7 @@
 import { colors, fonts } from './variables';
 
 // components
-import button from './aButton';
+import button from './button';
 
 export default {
   colors,
