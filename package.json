@@ -4,7 +4,6 @@
   "author": "carnold84",
   "license": "ISC",
   "version": "0.1.0",
-  "private": true,
   "main": "./dist/aura-design-system.common.js",
   "repository": "https://github.com/carnold84/aura-design-system",
   "publishConfig": {
