@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions';
 
-import AButton from './AButton';
+import AButton from './';
 import AAddIcon from '../icons/AAddIcon';
 
 export default { title: 'Button' };

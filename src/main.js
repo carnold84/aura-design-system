@@ -1,8 +1,8 @@
-import AActionBar from './components/AActionBar/AActionBar';
-import AButton from './components/AButton/AButton';
-import ALoading from './components/ALoading/ALoading';
-import ATab from './components/ATab/ATab';
-import icons from './components/icons';
+import AActionBar from './AActionBar';
+import AButton from './AButton';
+import ALoading from './ALoading';
+import ATab from './ATab';
+import icons from './icons';
 import themes from './themes';
 
 export {

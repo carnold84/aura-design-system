@@ -1,5 +1,5 @@
 import { shallowMount } from '@vue/test-utils';
-import Component from './AButton.vue';
+import Component from './index.vue';
 
 describe('AButton', () => {
   let vm;

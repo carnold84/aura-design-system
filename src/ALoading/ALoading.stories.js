@@ -1,4 +1,4 @@
-import ALoading from './ALoading';
+import ALoading from './';
 
 export default { title: 'Loading' };
 

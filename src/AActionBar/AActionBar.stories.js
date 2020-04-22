@@ -1,4 +1,4 @@
-import AActionBar from './AActionBar';
+import AActionBar from './';
 
 export default { title: 'Action Bar' };
 

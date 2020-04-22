@@ -1,5 +1,5 @@
-import AActionBar from '../AActionBar/AActionBar';
-import ATab from './ATab';
+import AActionBar from '../AActionBar';
+import ATab from './';
 
 export default { title: 'Tab' };
 

@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils';
-import Component from './ATab.vue';
+import Component from './index.vue';
 
-describe('ATab', () => {
+describe('ALoading', () => {
   let vm;
   let wrapper;
   beforeEach(() => {
