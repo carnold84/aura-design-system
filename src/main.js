@@ -1,18 +1,11 @@
 import AButton from './components/AButton/AButton';
-import AAddIcon from './components/icons/AAddIcon';
-
-import defaultTheme from './themes/default';
-
-const icons = {
-  AAddIcon,
-};
-
-const themes = {
-  default: defaultTheme,
-};
+import ALoading from './components/ALoading/ALoading';
+import icons from './components/icons';
+import themes from './themes';
 
 export {
   AButton,
+  ALoading,
   icons,
   themes,
 };

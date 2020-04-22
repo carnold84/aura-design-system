@@ -26,8 +26,8 @@ export default {
     Wrapper,
   },
   methods: {
-    onClick() {
-      this.$emit('click');
+    onClick(evt) {
+      this.$emit('click', evt);
     },
   },
   props: {

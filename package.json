@@ -1,10 +1,11 @@
 {
-  "name": "@carnold84/aura-design-system",
+  "name": "aura-design-system",
   "description": "Design system and library of UI components for use with Vue.",
   "author": "carnold84",
   "license": "ISC",
   "version": "0.1.0",
   "main": "./dist/aura-design-system.common.js",
+  "module": "./src/main.js",
   "repository": "https://github.com/carnold84/aura-design-system",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
