@@ -3,7 +3,7 @@ import styled from 'vue-styled-components';
 export const Wrapper = styled.div`
   align-items: center;
   background-color: ${props => props.theme.actionBar.bgColor};
-  border-bottom: ${props => props.theme.actionBar.border};
+  border-bottom: ${props => props.theme.actionBar.borderBottom};
   display: flex;
   height: 40px;
   justify-content: space-between;

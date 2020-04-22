@@ -5,6 +5,7 @@ import actionBar from './actionBar';
 import button from './button';
 import loading from './loading';
 import messagePanel from './messagePanel';
+import modal from './modal';
 import tab from './tab';
 
 export default {
@@ -17,5 +18,6 @@ export default {
   button,
   loading,
   messagePanel,
+  modal,
   tab,
 };

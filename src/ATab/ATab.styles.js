@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   align-items: center;
   background-color: transparent;
   border: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: ${props => props.theme.tab.borderBottom};
   color: ${props => props.theme.tab.color};
   cursor: pointer;
   display: flex;
@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   text-decoration: none;
 
   &.is-active {
-    border-bottom: ${props => props.theme.tab._active.border};
+    border-bottom: ${props => props.theme.tab._active.borderBottom};
     color: ${props => props.theme.tab._active.color};
   }
 

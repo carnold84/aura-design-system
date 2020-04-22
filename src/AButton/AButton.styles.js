@@ -16,7 +16,7 @@ export const Wrapper = styled.button`
   justify-content: center;
   line-height: 1.2em;
   outline: transparent solid 2px;
-  padding: 0 5px;
+  padding: 0 7px;
   text-decoration: none;
   transition: all 150ms ease-in-out;
 
