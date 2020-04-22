@@ -5,7 +5,7 @@ import AAddIcon from '../icons/AAddIcon';
 
 export default { title: 'Button' };
 
-export const button = () => ({
+export const defaultButton = () => ({
   components: { AButton },
   template: '<a-button>Button</a-button>',
 });
