@@ -19,6 +19,7 @@ export default {
   },
   title: {
     color: colors.text1,
+    fontFamily: fonts.primary,
   },
-  fontFamily: fonts.primary,
+  fontFamily: fonts.secondary,
 };

@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   align-items: center;
   display: flex;
   height: 100%;
+  font-family: ${props => props.theme.modal.fontFamily};
   justify-content: center;
   left: 0;
   position: absolute;
@@ -44,8 +45,10 @@ export const ModalCloseButton = styled.div`
 
 export const ModalTitle = styled.h2`
   color: ${props => props.theme.modal.title.color};
+  font-family: ${props => props.theme.modal.title.fontFamily};
   font-size: 1.2em;
   font-weight: 600;
+  margin: 0;
 `;
 
 export const ModalContent = styled.div`
