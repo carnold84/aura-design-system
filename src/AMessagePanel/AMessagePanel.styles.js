@@ -15,8 +15,8 @@ export const Wrapper = styled.div`
 export const Message = styled.h3`
   color: ${props => props.theme.messagePanel.color};
   font-family: ${props => props.theme.messagePanel.fontFamily};
-  font-size: 1.2em;
-  font-weight: 600;
-  line-height: 1.2em;
+  font-size: ${props => props.theme.messagePanel.fontSize};
+  font-weight: ${props => props.theme.messagePanel.fontWeight};
+  line-height: ${props => props.theme.messagePanel.lineHeight};
   margin: 0 0 10px;
 `;

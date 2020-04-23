@@ -10,8 +10,8 @@ export const Wrapper = styled.button`
   cursor: pointer;
   display: flex;
   font-family: ${props => props.theme.button.fontFamily};
-  font-size: 1em;
-  font-weight: 600;
+  font-size: ${props => props.theme.button.fontSize};
+  font-weight: ${props => props.theme.button.fontWeight};
   height: 36px;
   justify-content: center;
   line-height: 1.2em;

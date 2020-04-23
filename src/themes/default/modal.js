@@ -20,6 +20,12 @@ export default {
   title: {
     color: colors.text1,
     fontFamily: fonts.primary,
+    fontSize: '1.2em',
+    fontWeight: 600,
+    lineHeight: '1.2em',
   },
   fontFamily: fonts.secondary,
+  fontSize: '1em',
+  fontWeight: 600,
+  lineHeight: '1em',
 };
