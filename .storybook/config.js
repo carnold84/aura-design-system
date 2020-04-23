@@ -16,7 +16,9 @@ const Provider = () => {
     },
     template: `
       <theme-provider :theme="theme">
-        <story />
+        <div style="padding: 20px; position: absolute;">
+          <story />
+        </div>
       </theme-provider>
     `,
   };

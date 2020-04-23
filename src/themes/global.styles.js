@@ -5,6 +5,5 @@ export default injectGlobal`
     box-sizing: border-box;
     font-size: 13px;
     margin: 0;
-    padding: 20px;
   }
 `;

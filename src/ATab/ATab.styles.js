@@ -8,9 +8,10 @@ export const Wrapper = styled.div`
   color: ${props => props.theme.tab.color};
   cursor: pointer;
   display: flex;
-  font-family: ${props => props.theme.tab.fontFamily};
-  font-size: 1em;
-  font-weight: 600;
+  font-family: ${props => props.theme.button.fontFamily};
+  font-size: ${props => props.theme.button.fontSize};
+  font-weight: ${props => props.theme.button.fontWeight};
+  line-height: ${props => props.theme.messagePanel.lineHeight};
   padding: 12px 0;
   text-decoration: none;
 
