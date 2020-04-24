@@ -8,6 +8,7 @@ import loading from './loading';
 import messagePanel from './messagePanel';
 import modal from './modal';
 import tab from './tab';
+import toast from './toast';
 
 export default {
   colors,
@@ -22,4 +23,5 @@ export default {
   messagePanel,
   modal,
   tab,
+  toast,
 };

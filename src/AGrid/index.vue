@@ -26,9 +26,6 @@ export default {
       return this.$slots.default === undefined;
     },
   },
-  mounted() {
-    console.log(this.$slots);
-  },
   data() {
     return {
       breakpoints: [],
