@@ -7,6 +7,7 @@ import imageCard from './imageCard';
 import loading from './loading';
 import messagePanel from './messagePanel';
 import modal from './modal';
+import select from './select';
 import tab from './tab';
 import toast from './toast';
 
@@ -22,6 +23,7 @@ export default {
   loading,
   messagePanel,
   modal,
+  select,
   tab,
   toast,
 };
