@@ -16,7 +16,13 @@ const Provider = () => {
     },
     template: `
       <theme-provider :theme="theme">
-        <div style="padding: 20px; position: absolute;">
+        <div style="
+          box-sizing: border-box;
+          height: 100%;
+          padding: 20px;
+          position: absolute;
+          width: 100%;
+        ">
           <story />
         </div>
       </theme-provider>

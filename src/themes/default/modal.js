@@ -12,10 +12,10 @@ export default {
   modal: {
     bgColor: colors.theme1,
     border: 'none',
-    boxShadow: '0px 0px 20px 1px rgba(0, 0, 0, 0.15)',
+    boxShadow: '0px 1px 10px 0px rgba(0, 0, 0, 0.2)',
   },
   overlay: {
-    bgColor: 'rgba(0, 0, 0, 0.5)',
+    bgColor: 'rgba(255, 255, 255, 0.8)',
   },
   title: {
     color: colors.text1,
