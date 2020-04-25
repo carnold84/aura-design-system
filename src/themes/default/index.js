@@ -9,6 +9,7 @@ import messagePanel from './messagePanel';
 import modal from './modal';
 import select from './select';
 import tab from './tab';
+import textField from './textField';
 import toast from './toast';
 
 export default {
@@ -25,5 +26,6 @@ export default {
   modal,
   select,
   tab,
+  textField,
   toast,
 };
