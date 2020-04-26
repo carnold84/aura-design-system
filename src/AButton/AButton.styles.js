@@ -13,12 +13,23 @@ export const Wrapper = styled.button`
   font-size: ${props => props.theme.button.fontSize};
   font-weight: ${props => props.theme.button.fontWeight};
   height: 36px;
-  justify-content: center;
   line-height: ${props => props.theme.messagePanel.lineHeight};
   outline: transparent solid 2px;
-  padding: 0 7px;
+  padding: 0 10px;
   text-decoration: none;
   transition: all 150ms ease-in-out;
+
+  &.align-left {
+    justify-content: flex-start;
+  }
+
+  &.align-center {
+    justify-content: center;
+  }
+
+  &.align-right {
+    justify-content: flex-end;
+  }
 
   &:disabled {
     pointer-events: none;

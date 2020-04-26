@@ -1,6 +1,12 @@
 <template>
   <wrapper
-    :class="{ 'is-primary': isPrimary }"
+    :align-text="alignText"
+    :class="{
+      'is-primary': isPrimary,
+      'align-left': alignText === 'left',
+      'align-center': alignText === 'center',
+      'align-right': alignText === 'right'
+    }"
     :disabled="isDisabled"
     :type="type"
     @click="onClick"
@@ -31,6 +37,13 @@ export default {
     },
   },
   props: {
+    alignText: {
+      default: 'center',
+      type: String,
+      validator: value => {
+        return value.match(/(left|center|right)/);
+      },
+    },
     isDisabled: {
       default: false,
       type: Boolean,

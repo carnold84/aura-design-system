@@ -5,6 +5,7 @@ import actionBar from './actionBar';
 import button from './button';
 import imageCard from './imageCard';
 import loading from './loading';
+import menuItem from './menuItem';
 import messagePanel from './messagePanel';
 import modal from './modal';
 import select from './select';
@@ -23,6 +24,7 @@ export default {
   button,
   imageCard,
   loading,
+  menuItem,
   messagePanel,
   modal,
   select,
