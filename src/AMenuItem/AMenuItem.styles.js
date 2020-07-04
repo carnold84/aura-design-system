@@ -1,6 +1,6 @@
 import styled from 'vue-styled-components';
 
-export const Wrapper = styled('li', {
+export const Wrapper = styled('div', {
   activeClass: String,
 })`
   background-color: ${props => props.theme.menuItem.bgColor};
@@ -55,11 +55,6 @@ export const MainContent = styled.div`
   align-items: center;
   display: flex;
   flex-grow: 1;
-
-  .is-sub-menu-title & {
-    cursor: default;
-    pointer-events: none;
-  }
 `;
 
 export const ContentLeft = styled.div`

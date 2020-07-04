@@ -1,6 +1,8 @@
 <template>
   <wrapper
+    v-bind="$props"
     :align-text="alignText"
+    :as="component"
     :class="{
       'is-primary': isPrimary,
       'align-left': alignText === 'left',
@@ -36,6 +38,9 @@ export default {
       this.$emit('click', evt);
     },
   },
+  mounted() {
+    console.log(this.component);
+  },
   props: {
     alignText: {
       default: 'center',
@@ -43,6 +48,10 @@ export default {
       validator: value => {
         return value.match(/(left|center|right)/);
       },
+    },
+    component: {
+      default: 'button',
+      type: [Object, String],
     },
     isDisabled: {
       default: false,

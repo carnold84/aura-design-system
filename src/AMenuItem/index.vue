@@ -1,42 +1,38 @@
 <template>
-  <wrapper
+  <component-wrapper
+    v-bind="$props"
     :active-class="activeClass"
     :class="{
-      'is-active': isActive
+      'is-active': isActive,
+      'is-sub-menu-item': isSubMenu,
+      'is-sub-menu-title': isSubMenuTitle
     }"
+    alignText="left"
+    :component="component"
+    class="btn"
   >
-    <a-button
-      v-bind="$props"
-      alignText="left"
-      :as="component"
-      :class="{
-        'is-sub-menu-item': isSubMenu,
-        'is-sub-menu-title': isSubMenuTitle
-      }"
-      class="btn"
-    >
-      <main-content>
-        <content-left v-if="$slots['content-left']">
-          <slot name="content-left" />
-        </content-left>
-        <slot />
-      </main-content>
-      <slot name="content-right" />
-    </a-button>
-  </wrapper>
+    <main-content>
+      <content-left v-if="$slots['content-left']">
+        <slot name="content-left" />
+      </content-left>
+      <slot />
+    </main-content>
+    <slot name="content-right" />
+  </component-wrapper>
 </template>
 
 <script>
-import AButton from '../AButton';
-import { ContentLeft, MainContent, Wrapper } from './AMenuItem.styles';
+import { ComponentWrapper, ContentLeft, MainContent } from './AMenuItem.styles';
 
 export default {
   name: 'a-menu-item',
   components: {
-    AButton,
     ContentLeft,
     MainContent,
-    Wrapper,
+    ComponentWrapper,
+  },
+  mounted() {
+    console.log(this.component);
   },
   props: {
     activeClass: {
@@ -44,8 +40,8 @@ export default {
       type: String,
     },
     component: {
-      default: 'li',
-      type: String,
+      default: 'button',
+      type: [Function, Object, String],
     },
     isActive: {
       default: false,
